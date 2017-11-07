@@ -1,0 +1,9 @@
+If iInfoPaneVisible
+	Do $cinst.$objs.InfoPane.$alpha.$assign(255)
+	Do $cinst.$objs.InfoPane.$top.$assign(130)
+	Do $cinst.$objs.Info.$fontsize.$assign(12)
+Else
+	Do $cinst.$objs.InfoPane.$alpha.$assign(0)
+	Do $cinst.$objs.infoPane.$top.$assign(500)
+	Do $cinst.$objs.Info.$fontsize.$assign(5)
+End If

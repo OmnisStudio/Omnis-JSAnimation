@@ -1,0 +1,44 @@
+{
+	"classtype": "kSystemtable",
+	"internalversion": 4,
+	"iconversion": 24,
+	"nextident": 25,
+	"properties": {
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2017-08-30 13:56:02",
+		"desc": "",
+		"external": false,
+		"moddate": "2012-03-13 09:29:52",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": "1"
+	},
+	"iconids": [
+		{
+			"iconid": 111176,
+			"pageid": 25,
+			"iconpos": 1,
+			"defaultsize": 1,
+			"flags": 0
+		}
+	],
+	"pages": [
+		{
+			"pageid": 25,
+			"name": "Animation",
+			"bitmapid": 1,
+			"flags": 1856
+		}
+	],
+	"bitmaps": [
+		{
+			"bitmapid": 1,
+			"solid": {
+				"$png": "solid1.png"
+			},
+			"alpha": {
+				"$png": "alpha1.png"
+			}
+		}
+	]
+}

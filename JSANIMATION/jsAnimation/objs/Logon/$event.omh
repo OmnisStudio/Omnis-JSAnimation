@@ -1,0 +1,14 @@
+On evClick
+	Do $cinst.$objs.InfoPane.$visible.$assign(kTrue)
+	
+	Do $cinst.$beginanimations(500,kJSAnimationCurveLinear)
+	Do $cinst.$objs.logonPane.$alpha.$assign(0)
+	;  Do $cinst.$objs.logonPane.$left.$assign(600)
+	
+	;  Do $cinst.$objs.InfoPane.$alpha.$assign(255)
+	;  Do $cinst.$objs.InfoPane.$top.$assign(110)
+	;  Do $cinst.$objs.Info.$fontsize.$assign(12)
+	Calculate iInfoPaneVisible as kTrue
+	Do method $showInfoPane
+	
+	Do $cinst.$commitanimations()

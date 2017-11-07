@@ -1,0 +1,33 @@
+;  Enter your initialization code here
+
+If $cwind().$name<>$cclass().$name     ;; form is in a subwindow
+	Do $cwind.$getConstructRow Returns pRow
+End If
+
+If pRow.Flags     ;; browser supports animation
+	Do $cinst.$objs.Info.$fontsize.$assign(5)
+Else
+	Do $cinst.$showmessage("Your browser does not support Animation, please view using an alternative browser such as Chrome.",'Warning')
+End If
+
+Begin text block
+Text: {Properties available for Animation} (Platform newline)
+Text: (Platform newline)
+Text: {$left} (Platform newline)
+Text: {$top} (Platform newline)
+Text: {$width} (Platform newline)
+Text: {$height} (Platform newline)
+Text: {$alpha} (Platform newline)
+Text: {$backcolor} (Platform newline)
+Text: {$backalpha} (Platform newline)
+Text: {$textcolor} (Platform newline)
+Text: {$fontsize} (Platform newline)
+Text: {$linestyle} (Platform newline)
+Text: {$buttoncolor}
+End text block
+Get text block iText
+
+Do $cinst.$beginanimations(250,kJSAnimationCurveLinear)
+Do $cinst.$objs.logonPane.$alpha.$assign(255)
+;  Do $cinst.$objs.logonPane.$left.$assign(120)
+Do $cinst.$commitanimations()
